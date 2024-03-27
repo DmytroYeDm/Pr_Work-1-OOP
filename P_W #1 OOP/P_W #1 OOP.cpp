@@ -15,7 +15,10 @@ public:
         im = imag;
     }
 
-
+    Complex_Num(Complex_Num& c_n) {
+        re = c_n.re;
+        im = c_n.im;
+    }
     void Input() {
         cin >> re;
         cin >> im;
